@@ -31,3 +31,8 @@ export const descriptiveStatisticsToCsv = (rows: DescriptiveStatistic[]): string
 
   return [header.join(','), ...body].join('\n');
 };
+
+export const datasetToCsv = (columns: string[], rows: Array<Record<string, string | number | null>>): string => {
+  const body = rows.map((row) => columns.map((column) => csvEscape(row[column] ?? null)).join(','));
+  return [columns.join(','), ...body].join('\n');
+};

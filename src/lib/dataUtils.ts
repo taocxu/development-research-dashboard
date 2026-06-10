@@ -123,7 +123,7 @@ export const buildDataset = (rows: Record<string, unknown>[], sourceLabel: strin
   };
 };
 
-export const createSampleDataset = (): Dataset => buildDataset(sampleDatasetRows, 'Synthetic sample dataset');
+export const createSampleDataset = (): Dataset => buildDataset(sampleDatasetRows, 'World Bank WDI demo dataset');
 
 export const countMissingCells = (rows: DataRow[]): number =>
   rows.reduce(

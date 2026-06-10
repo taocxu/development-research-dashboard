@@ -15,6 +15,24 @@ export interface Dataset {
   sourceLabel: string;
 }
 
+export interface DemoDatasetMetadata {
+  source: string;
+  sourceNote: string;
+  sourceNoteZh: string;
+  countries: string[];
+  years: number[];
+  indicatorCodes: string[];
+  indicatorLabels: Record<string, string>;
+  lastRefreshed: string;
+  geEstFetched: boolean;
+  institutionalQualityIncluded: boolean;
+  policyIntensityIncluded: boolean;
+  policyIntensityFormula: string | null;
+  policyIntensityComponents: string[];
+  rowCount: number;
+  omittedIndicators: string[];
+}
+
 export interface SummaryMetrics {
   observations: number;
   variables: number;

@@ -11,15 +11,15 @@ const CorrelationMatrix = ({ rows, columns }: CorrelationMatrixProps) => {
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full border-separate border-spacing-0 text-left text-sm">
+    <div className="overflow-x-auto rounded-2xl border border-slate-200">
+      <table className="min-w-max border-separate border-spacing-0 text-left text-[13px]">
         <thead>
           <tr>
-            <th className="border-b border-stone-200 bg-stone-50 px-3 py-2 font-medium text-slate-700">Variable</th>
+            <th className="border-b border-slate-200 bg-slate-50 px-3 py-2.5 font-medium text-slate-700">Variable</th>
             {columns.map((column) => (
               <th
                 key={column}
-                className="border-b border-stone-200 bg-stone-50 px-3 py-2 font-medium text-slate-700"
+                className="border-b border-slate-200 bg-slate-50 px-3 py-2.5 font-medium text-slate-700"
               >
                 {column}
               </th>
@@ -28,10 +28,10 @@ const CorrelationMatrix = ({ rows, columns }: CorrelationMatrixProps) => {
         </thead>
         <tbody>
           {rows.map((row) => (
-            <tr key={row.variable} className="odd:bg-white even:bg-stone-50/70">
-              <td className="border-b border-stone-100 px-3 py-2 font-medium text-ink">{row.variable}</td>
+            <tr key={row.variable} className="odd:bg-white even:bg-slate-50/60 hover:bg-blue-50/30">
+              <td className="border-b border-slate-100 px-3 py-2.5 font-medium text-ink">{row.variable}</td>
               {columns.map((column) => (
-                <td key={`${row.variable}-${column}`} className="border-b border-stone-100 px-3 py-2">
+                <td key={`${row.variable}-${column}`} className="border-b border-slate-100 px-3 py-2.5">
                   {typeof row[column] === 'number' ? (row[column] as number).toFixed(3) : row[column]}
                 </td>
               ))}

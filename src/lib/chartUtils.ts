@@ -32,6 +32,28 @@ export const getAllowedYColumns = (meta: ColumnMeta[]): string[] =>
 export const getAllowedGroupColumns = (meta: ColumnMeta[]): string[] =>
   meta.filter((column) => column.kind === 'categorical').map((column) => column.name);
 
+export const getTopGroupValues = (rows: DataRow[], groupVariable: string, limit = 8): string[] => {
+  if (!groupVariable) {
+    return [];
+  }
+
+  const counts = new Map<string, number>();
+  rows.forEach((row) => {
+    const value = row[groupVariable];
+    if (value === null || value === undefined || value === '') {
+      return;
+    }
+
+    const key = String(value);
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  });
+
+  return Array.from(counts.entries())
+    .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+    .slice(0, limit)
+    .map(([value]) => value);
+};
+
 export const buildSeriesData = (
   rows: DataRow[],
   xVariable: string,

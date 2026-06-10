@@ -23,14 +23,14 @@ const DataPreviewTable = ({ columns, rows }: DataPreviewTableProps) => {
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full border-separate border-spacing-0 text-left text-sm">
+    <div className="overflow-x-auto rounded-2xl border border-slate-200">
+      <table className="min-w-max border-separate border-spacing-0 text-left text-[13px]">
         <thead>
           <tr>
             {columns.map((column) => (
               <th
                 key={column}
-                className="sticky top-0 border-b border-stone-200 bg-stone-50 px-3 py-2 font-medium text-slate-700"
+                className="sticky top-0 border-b border-slate-200 bg-slate-50 px-3 py-2.5 font-medium text-slate-700"
               >
                 {column}
               </th>
@@ -39,9 +39,9 @@ const DataPreviewTable = ({ columns, rows }: DataPreviewTableProps) => {
         </thead>
         <tbody>
           {rows.slice(0, 20).map((row, index) => (
-            <tr key={`preview-${index}`} className="odd:bg-white even:bg-stone-50/70">
+            <tr key={`preview-${index}`} className="odd:bg-white even:bg-slate-50/60 hover:bg-blue-50/40">
               {columns.map((column) => (
-                <td key={`${index}-${column}`} className="border-b border-stone-100 px-3 py-2 text-slate-700">
+                <td key={`${index}-${column}`} className="border-b border-slate-100 px-3 py-2.5 text-slate-700">
                   {formatCell(row[column] ?? null)}
                 </td>
               ))}

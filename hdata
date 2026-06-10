@@ -1,0 +1,27 @@
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/ChartBuilder.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/CorrelationMatrix.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/DataPreviewTable.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/DescriptiveStatsTable.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/SummaryCards.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/sampleDataset.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/chartUtils.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/dataUtils.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/exportUtils.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/types.ts', LF will be replaced by CRLF the next time Git touches it
+ README.md                                |  52 [32m+++++[m[31m-[m
+ package.json                             |   1 [32m+[m
+ src/App.tsx                              | 273 [32m+++++++++++++++++++++++[m[31m--------[m
+ src/components/ChartBuilder.tsx          |  95 [32m++[m[31m---------[m
+ src/components/CorrelationMatrix.tsx     |  14 [32m+[m[31m-[m
+ src/components/DataPreviewTable.tsx      |  10 [32m+[m[31m-[m
+ src/components/DescriptiveStatsTable.tsx |  22 [32m+[m[31m--[m
+ src/components/SummaryCards.tsx          |  19 [32m++[m[31m-[m
+ src/data/sampleDataset.ts                | 173 [32m+[m[31m-------------------[m
+ src/lib/chartUtils.ts                    |  22 [32m+++[m
+ src/lib/dataUtils.ts                     |   2 [32m+[m[31m-[m
+ src/lib/exportUtils.ts                   |   5 [32m+[m
+ src/types.ts                             |  18 [32m++[m
+ 13 files changed, 347 insertions(+), 359 deletions(-)
