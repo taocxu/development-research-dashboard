@@ -111,3 +111,14 @@ npm run refresh:data
 - Additional export formats for summary tables and figures.
 - More explicit handling of panel identifiers and duplicate observations.
 - Optional client-side filtering for large exploratory tables.
+
+- ## References
+
+Xu, T., & Hu, Y. (2024). Towards Sustainable Prosperity? Policy Evaluation of Jiangsu Advanced Manufacturing Clusters. Technology in Society, 77, 102583. https://doi.org/10.1016/j.techsoc.2024.102583
+Xu, T., & Zhu, Y. (2025). Why Cities Backfire? High-Speed Railway New Town Planning and Urban Structural Change. https://doi.org/10.21203/rs.3.rs-7374795/v2
+Xu, T., & Zhu, W. (2025). When Polanyi Met Schumpeter: Social Trust and Entrepreneurship. https://mpra.ub.uni-muenchen.de/123894
+Xu, T. (2024). The Third Way: Reinterpreting the Political Settlements Framework with Structuration Theory https://doi.org/10.31219/osf.io/nmvhq
+Xu, T. (2024). The Road Not Taken? Industrial Policy and Political Settlements in China and Indonesia 1990–2022. https://mpra.ub.uni-muenchen.de/122669
+Wang, Y., & Xu, T. (2024). It Takes Three to Ceilidh: Pension System and Multidimensional Poverty Mitigation in China. https://doi.org/10.48550/arXiv.2411.02807
+Xu, T., & Hu, Z. (2022). Peasant Life in Changing China: Rural Pension System Reform and Social Insurance Participation. https://doi.org/10.48550/arXiv.2204.00785
+
