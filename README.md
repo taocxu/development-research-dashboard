@@ -112,7 +112,7 @@ npm run refresh:data
 - More explicit handling of panel identifiers and duplicate observations.
 - Optional client-side filtering for large exploratory tables.
 
-- ## References
+## References
 
 Xu, T., & Hu, Y. (2024). Towards Sustainable Prosperity? Policy Evaluation of Jiangsu Advanced Manufacturing Clusters. Technology in Society, 77, 102583. https://doi.org/10.1016/j.techsoc.2024.102583
 
